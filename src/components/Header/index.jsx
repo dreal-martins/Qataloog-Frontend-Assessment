@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useAppContext } from "../../contexts";
 import frenchIcon from "../../assets/icons/frenchIcon.svg";
 import arrowDown from "../../assets/icons/chevronDownIcon.svg";
-import avatar from "../../assets/images/avatar.svg";
 import questionMark from "../../assets/images/unavailable.svg";
 import axios from "axios";
 
