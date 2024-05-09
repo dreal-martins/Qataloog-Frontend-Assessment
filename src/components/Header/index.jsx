@@ -17,7 +17,7 @@ export default function Header() {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:3001/users")
       .then((response) => {
         const userData = response.data[0];
         if (userData) {

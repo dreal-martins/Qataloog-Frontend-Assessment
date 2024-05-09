@@ -21,8 +21,9 @@ const Profile = () => {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:3001/users")
       .then((response) => {
+        console.log(response);
         const userData = response.data[0];
         if (userData) {
           setFullName(userData.fullName);
@@ -82,7 +83,7 @@ const Profile = () => {
     };
 
     axios
-      .put("http://localhost:3000/users/1", userData)
+      .put("http://localhost:3001/users/1", userData)
       .then((response) => {
         console.log("Data updated successfully:", response.data);
         toast.success(`User updated successfully🎉`);
